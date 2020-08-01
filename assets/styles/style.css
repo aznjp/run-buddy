@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Basic values for properties for the page in general */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -70,6 +71,33 @@ section {
     padding: 60px;
 }
 
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+
+/*  We chose to use the inline-block value instead of the inline value so it can have the best of both worlds. 
+It's now an inline element, but things like padding still behave like they would on block elements. */
+
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+
+/* Because the previous headers were similar in properties we simplified them by placing them under one class with one seperate distinction
+which is the differences in border*/
+
+.primary-border {
+    border-color: #fce138;
+}
+  
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+
+
+
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
@@ -128,3 +156,55 @@ section {
 }
 /* Hero Style End */
  
+
+
+
+/* Introduction Style Start */
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+
+/*  Only works for horizontal centering. margin: auto 0 does not vertically center elements.*/
+
+    margin: 0 auto;
+}
+/* Introduction Style End */
+
+
+
+/* Steps Style Start */
+.steps { 
+    text-align: center;
+    background: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+  
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+} 
+  
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+  
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+.steps span {
+    /* Used to seperately define fonts within the same text*/
+    font-size: 38px;
+}
