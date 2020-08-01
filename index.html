@@ -2,35 +2,98 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+
         <title>Run Buddy</title>
+        
+        <!-- Links to the css style sheet and uses relative location to make it easier to access -->
+        
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    
-    <header>
-        <h1>RUN BUDDY</h1>
 
-        <nav>
-            <ul>
-                <li>
-                  <a href="#what-we-do">What We Do</a>
-                </li>
-                <li>
-                  <a href="#what-you-do">What You Do</a>
-                </li>
-                <li>
-                  <a href="#your-trainers">Your Trainers</a>
-                </li>
-                <li>
-                  <a href="#reach-out">Reach Out</a>
-                </li>
-              </ul>
-        </nav>
-        What We Do What You Do Your Trainers Reach Out
-    </header>
 
+    <!-- Ensure that the body text is placed underneath the head and keep the headers within the body section like an essay structure-->
     <body>
 
-        <section>
+        <header>
+            <h1>RUN BUDDY</h1>
+    
+            <nav>
+                <ul>
+                    <li>
+                      <a href="#what-we-do">What We Do</a>
+                    </li>
+
+                    <li>
+                      <a href="#what-you-do">What You Do</a>
+                    </li>
+
+                    <li>
+                      <a href="#your-trainers">Your Trainers</a>
+                    </li>
+
+                    <li>
+                      <a href="#reach-out">Reach Out</a>
+                    </li>
+
+                  </ul>
+            </nav>
+
+            What We Do What You Do Your Trainers Reach Out
+            
+        </header>
+
+        <section class="hero">
+
+            <div class="hero-form">
+                <h3>Get Started Today</h3>
+
+                <p>Fill out this form and one of our trainers will schedule a consult</p>
+                
+                <!-- Add form element and place in inputs such as open ended (text fields) or close ended (checkboxes) elements-->
+                
+                <form>
+
+                    <!-- the "for" in label links the <id> to the <input> element, and placeholder just give hints as to what the field is relating to if it is hovered over-->
+
+                    <label for="name">Enter full name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
+
+                    <!-- the input type for both email and phone has changed with HTML5 so you can check on those to change them to specified input types -->
+
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
+
+                    <label for="phone">Enter a telephone number:</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
+
+                    <p>
+                        Have you worked out with a trainer before?
+
+                        <!-- the input type "radio" refers to specific input (name) which normally you use to group reference the resulted button clicked-->
+
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>
+                    </p>
+
+                    <p>
+                        <label for="checkbox" >
+                          I acknowledge that I am at least 18 years of age.
+                        </label>
+                        <input type="checkbox" name="age-confirm" id="checkbox" />
+                    </p>
+                    
+                    <button type="submit">
+                        Get running!
+                    </button>
+                
+                </form>
+
+            </div>
+
+            
          </section>
 
         <section>
@@ -48,6 +111,8 @@
         <section>
             <h2>Reach Out</h2>
         </section>
+
+        <!-- Footer just like how it is placed in word so that you can put your logos and references -->
 
         <footer>
             <h2>❤️ Made with love by Run Buddy.</h2>
